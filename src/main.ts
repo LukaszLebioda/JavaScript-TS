@@ -1,6 +1,9 @@
-let username = "Davey";
-console.log(username);
+const sum = (a: number, b: string) => {
+	return a + b
+}
 
-let a: number = 12;
-let b: number = 6;
-//lala
+let album: any = true
+
+let postId: string | number
+
+let re: RegExp = /\w+/g

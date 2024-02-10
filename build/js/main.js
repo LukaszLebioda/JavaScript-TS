@@ -1,6 +1,7 @@
 "use strict";
-let username = "Davey";
-console.log(username);
-let a = 12;
-let b = 6;
-let c = 2;
+const sum = (a, b) => {
+    return a + b;
+};
+let album = true;
+let postId;
+let re = /\w+/g;
