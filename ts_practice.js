@@ -1,18 +1,9 @@
 "use strict";
-let myName = 'Dave';
-let meaningOfLife;
-let isLoading;
-let album;
-myName = 'John';
-meaningOfLife = 42;
-isLoading = true;
-album = 1970;
-album = '1970';
-album = true;
-let numz;
-const sum = (a, b) => {
-    return a + b;
-};
-let postId;
-let isActive;
-let re = /\w+/g;
+// TUPLE
+// it doesn't matter for TS what length the array has
+// or which index the particular elements are
+// TUPLE => we use it to explicitely define the length of the array
+// or tell TS what type a specific element should be
+let bands = [];
+bands.push('123');
+bands.push(123);

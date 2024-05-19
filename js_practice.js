@@ -1,4 +1,7 @@
-let sth = 23
+let arr1 = [1, 2, 3]
+// let arr2 = [10, 20, 30]
+let arr2 = {}
 
-let result = sth > 20 ? 'bigger' : 'smaller'
-console.log(result)
+arr2 = arr1
+
+console.log(arr2)

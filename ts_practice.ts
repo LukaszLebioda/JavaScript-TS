@@ -1,22 +1,10 @@
-let myName: string = 'Dave'
-let meaningOfLife: number
-let isLoading: boolean
-let album: any
+// TUPLE
+// it doesn't matter for TS what length the array has
+// or which index the particular elements are
 
-myName = 'John'
-meaningOfLife = 42
-isLoading = true
-album = 1970
-album = '1970'
-album = true
+// TUPLE => we use it to explicitely define the length of the array
+// or tell TS what type a specific element should be
 
-let numz: number | boolean
-
-const sum = (a: number, b: string) => {
-	return a + b
-}
-
-let postId: string | number
-let isActive: number | boolean
-
-let re: RegExp = /\w+/g
+let bands: string[] = []
+bands.push('123')
+bands.push(123)

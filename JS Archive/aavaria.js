@@ -10,12 +10,7 @@ var a = 101
 let numberOrString = 'not number'
 numberOrString = 123456789
 
-// incrementation & decrementation
-// n-variable first, then incrementation
-let n = 10
-console.log(n++)
-console.log(n)
-// incrementation first, then m-variable
-let m = 10
-console.log(++m)
-console.log(m)
+// ternary operator
+let number = 23
+let result = number > 30 ? 'ok' : 'not ok'
+console.log(result)
