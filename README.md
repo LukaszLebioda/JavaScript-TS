@@ -15,6 +15,7 @@ npm i / npm install
 - Code Runner,
 - Prettier,
 - ESLint,
+- Llama Coder,
 
 # Prettier
 
@@ -30,6 +31,15 @@ npm i / npm install
   "arrowParens": "avoid",
   "trailingComma": "es5"
   }
+
+# LLama Coder
+
+- install extention in VS Code,
+- install Ollama from ollama.com,
+- terminal => ollama run llama3,
+- terminal => /? or /help for help,
+- file with code => tab or cmd + arrow to autocomplete,
+- exit => ctrl + d or /bye
 
 # TypeScript
 
