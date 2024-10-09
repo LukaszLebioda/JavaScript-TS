@@ -1,3 +1,28 @@
+# how to work with README.md (markdown documentation)
+
+## the more hashes we type
+
+### the smaller the header
+
+#### becomes
+
+`in backticks we provide pieces of code`
+
+```javascript
+and in triple backticks
+we provide larger, multiline
+pieces of code
+additionally we can provide the language name
+according to which the syntax will be formatted
+```
+
+- hyphens
+- to create
+- lists
+
+[double space] at the end of the line replaces [enter]
+and we use it to break a line if needed
+
 # package.json
 
 npm init / npm init -y
@@ -6,16 +31,26 @@ npm init / npm init -y
 
 npm i / npm install
 
+# VS code shortcuts
+
+duplicate => shift + option + arrow
+comment => cmd + /
+hide explorer panel => cmd + b
+terminal => ctrl + `
+search options => cmd + shift + p
+highlight the same parts => highlight, then cmd + d
+
 # VS code extensions
 
 - Live Server,
-- vscode-icons,
-- JavaScript (ES6) code snippets,
+- vscode-icons (or Material Icon Theme) (nice looking folders and files),
+- JavaScript (ES6) code snippets (e.g. clg => console.log()),
 - Thunder Client,
-- Code Runner,
+- Code Runner (to run code => a triangle sign in menu),
 - Prettier,
 - ESLint,
 - Llama Coder,
+- IntelliCode,
 
 # Prettier
 
@@ -43,8 +78,11 @@ npm i / npm install
 
 # TypeScript
 
-- npm install typescript -g (to install tsc globally),
-- npm install typescript –save-dev (to install tsc locally),
-- npm tsc –init (to create tsconfig.json file),
-- within tsconfig.json => noEmitOnError: false / false,
-- create file filename.ts => tsc filename.ts (to compile into filename.js) // tsc filename.ts -w (to watch changes),
+- -> npm install typescript -g (to install tsc globally),
+- -> npm tsc –init (to create tsconfig.json file),
+- within tsconfig.json => noEmitOnError: false / true,
+- create file filename.ts
+- -> tsc filename.ts (to compile into js file of the same name, like: filename.js)
+- -> tsc filename.ts newfile.js (to compile to js file of different name)
+- -> tsc filename.ts -w (to watch changes, to keep compiling to js file),
+- -> tsc -w (to watch all \*.ts files),
