@@ -49,7 +49,7 @@ highlight the same parts => highlight, then cmd + d
 - Code Runner (to run code => a triangle sign in menu),
 - Prettier,
 - ESLint,
-- Llama Coder,
+- Llama Coder and/or Continue,
 - IntelliCode,
 
 # Prettier
@@ -67,11 +67,13 @@ highlight the same parts => highlight, then cmd + d
   "trailingComma": "es5"
   }
 
-# LLama Coder
+# DeepSeek Coder with Continue
 
-- install extention in VS Code,
-- install Ollama from ollama.com,
-- terminal => ollama run llama3,
+- install Ollama from ollama.co (is provides platform to run LLMs locally),
+- terminal => ollama run deepseek-coder:1.3b (or any other version),
+- this will install AI model locally,
+- install VS Code extension: Continue (to integrate local AI model with VS Code),
+- terminal => ollama run deepseek-coder (ollama rm deepseek-coder to uninstall);
 - terminal => /? or /help for help,
 - file with code => tab or cmd + arrow to autocomplete,
 - exit => ctrl + d or /bye
