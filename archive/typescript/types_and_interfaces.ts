@@ -1,3 +1,5 @@
+// TYPES
+
 type Customer = {
 	firstName: string;
 	lastName: string;
@@ -13,3 +15,17 @@ let firstCustomer: Customer = {
 	age: 42,
 	isActive: true,
 };
+
+//-------------------------------------------------
+
+// INTERFACES
+
+interface User {
+	username: string;
+	password: string;
+}
+
+function returningUserInfo(user: User) {
+	console.log(`User name is ${user.username}`);
+	console.log(`Password name is ${user.password}`);
+}

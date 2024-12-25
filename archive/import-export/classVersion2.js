@@ -1,5 +1,5 @@
 // first create class, but not export it yet
-export class CustomerDetails {
+class CustomerDetails {
 	/**
 	 * this method will print the first name
 	 * @param {string} firstName
