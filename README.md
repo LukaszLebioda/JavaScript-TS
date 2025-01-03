@@ -1,8 +1,12 @@
 # node_modules
 
+~ patch / minor version update allowed (~1.2.3 will match all 1.2.x but not 1.3.x versions),
+^ major version update allowed (^1.2.3 will use releases from 1.2.3 to < 2.0.0),
+
 npm i / npm install (as dependency)
 npm install -D / npm install --save-dev (as devDependency)
 npm install -g (globally)
+npm install --save-exact (installs the exact version, not ~ or ^),
 
 # VS code shortcuts
 
@@ -13,7 +17,7 @@ terminal => ctrl + `
 search options => cmd + shift + p
 highlight the same parts => highlight, then cmd + d
 
-# VS code extensions
+# VS code extensions & fonts & themes
 
 - Live Server,
 - vscode-icons (or Material Icon Theme) (nice looking folders and files),
@@ -30,8 +34,18 @@ highlight the same parts => highlight, then cmd + d
 
 # Prettier
 
-- VS Code settings => default formatter: Prettier => format on-save / format on-paste (optional),
-- create file .prettierrc.json (in main project directory),
+- CLI (optional, used mostly when we want to prettify already existing project):
+- npm i --save-dev prettier (or: npm i --save-dev --save-exact prettier (to hardcode current version, which is recommended by prettier to avoid different formatting with different versions)),
+- npx prettier --write fileName.js (to format a file),
+- npx prettier . --write (to format all files),
+- npx prettier --check fileName.js (to check file formatting),
+- npx prettier . --check (to check all files),
+
+- Plugin (CLI not needed):
+- VS Code - install extension: Prettier - Code formatter,
+- VS Code settings => set default formatter to: Prettier => format on-save / format on-paste (optional),
+- create file .prettierignore (to list files/folders to bo ignored),
+- create file .prettierrc (in main project directory),
 - within .prettierrc.json set configuration:
   {
   "semi": false,
@@ -42,6 +56,26 @@ highlight the same parts => highlight, then cmd + d
   "arrowParens": "avoid",
   "trailingComma": "es5"
   }
+
+# ESLint
+
+- CLI:
+- npm init @eslint/config@latest (check syntax & find problems, 'import' syntax, not React & Vue, with TypeScript, in Node (not Browser), install additional libraries, select npm),
+- file is created in the project directory: eslint.config.js:
+- in package.json -> "lint": "eslint",
+- in terminal -> npm run lint (or: npm run lint .) (to check all files),
+- or: npm run lint fileName.js (to check a specific file),
+- set of default rules: https://eslint.org/docs/latest/rules,
+- in eslint.config.sj we can add rule object and refer to a specific rule to change it (e.g. by default the rule of 'unused variables detected' is an "error", we can change it to "warn" or "off"):
+{
+  rules: {
+    "no-unused-vars": "warn",
+  },
+},
+
+- Plugin (CLI needed):
+- VS Code - install extension: ESLint (from Microsoft),
+- plugin will inform us about any issues directly within code we write (red or yellow squiggly lines), but also on the file tree level (red or yellow filenames),
 
 # DeepSeek Coder with Continue
 

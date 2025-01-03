@@ -10,4 +10,11 @@ function test(arr) {
 		show(arr[i] * 2);
 	}
 }
+
 test([1, 2, 3, 4, 5, 6, 7]);
+
+let hello = "hello";
+
+// ------------
+
+function greatherThan6(arr2) {}
