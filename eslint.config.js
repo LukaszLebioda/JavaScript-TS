@@ -12,6 +12,8 @@ export default [
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
 	{
+		// overrides default rules
+		// default rules: https://eslint.org/docs/latest/rules/
 		rules: {
 			"no-unused-vars": "warn",
 			"@typescript-eslint/no-unused-vars": "off",

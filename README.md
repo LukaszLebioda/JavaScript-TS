@@ -57,6 +57,9 @@ highlight the same parts => highlight, then cmd + d
   "trailingComma": "es5"
   }
 
+  - recommended package to integrate Prettier with ESlint:
+  - https://github.com/prettier/eslint-config-prettier
+
 # ESLint
 
 - CLI:
@@ -76,6 +79,9 @@ highlight the same parts => highlight, then cmd + d
 - Plugin (CLI needed):
 - VS Code - install extension: ESLint (from Microsoft),
 - plugin will inform us about any issues directly within code we write (red or yellow squiggly lines), but also on the file tree level (red or yellow filenames),
+
+  - recommended package to integrate Prettier with ESlint:
+  - https://github.com/prettier/eslint-config-prettier
 
 # DeepSeek Coder with Continue
 
