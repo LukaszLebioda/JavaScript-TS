@@ -47,15 +47,19 @@ highlight the same parts => highlight, then cmd + d
 - create file .prettierignore (to list files/folders to bo ignored),
 - create file .prettierrc (in main project directory),
 - within .prettierrc.json set configuration:
-  {
-  "semi": false,
-  "singleQuote": true,
-  "useTabs": true,
-  "tabWidth": 2,
-  "bracketSpacing": true,
-  "arrowParens": "avoid",
-  "trailingComma": "es5"
-  }
+{
+	"semi": true,
+	"singleQuote": false,
+	"useTabs": true,
+	"tabWidth": 2,
+	"bracketSpacing": true,
+	"arrowParens": "always",
+	"trailingComma": "es5",
+	"printWidth": 80,
+	"bracketSameLine": true
+}
+- within .prettierignore we can list all paths/files,
+- we don't want Prettier to include,
 
   - recommended package to integrate Prettier with ESlint:
   - https://github.com/prettier/eslint-config-prettier

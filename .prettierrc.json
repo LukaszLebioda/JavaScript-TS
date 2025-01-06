@@ -7,6 +7,5 @@
 	"arrowParens": "always",
 	"trailingComma": "es5",
 	"printWidth": 80,
-	"bracketSameLine": true,
-	"prettier.trailingComma": "es5"
+	"bracketSameLine": true
 }
