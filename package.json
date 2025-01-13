@@ -7,7 +7,8 @@
 		"llama": "ollama run llama3",
 		"test": "jest",
 		"cowsay": "cowsay",
-		"lint": "eslint"
+		"lint": "eslint",
+		"express": "nodemon ./MERN/express.js"
 	},
 	"keywords": [],
 	"type": "module",
@@ -18,6 +19,7 @@
 		"eslint": "^9.17.0",
 		"globals": "^15.14.0",
 		"jest": "^29.7.0",
+		"nodemon": "^3.1.9",
 		"path": "^0.12.7",
 		"prettier": "3.4.2",
 		"typescript": "^5.7.2",

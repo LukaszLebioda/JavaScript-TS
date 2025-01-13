@@ -1,12 +1,21 @@
 # node_modules
 
-~ patch / minor version update allowed (~1.2.3 will match all 1.2.x but not 1.3.x versions),
-^ major version update allowed (^1.2.3 will use releases from 1.2.3 to < 2.0.0),
-
 npm i / npm install (as dependency)
 npm install -D / npm install --save-dev (as devDependency)
 npm install -g (globally)
 npm install --save-exact (installs the exact version, not ~ or ^),
+
+# versioning
+
+example of version: 1.28.2:
+- 1: major (risk of uncompatible changes),
+- 28: minor (new, but compatible functionalities),
+- 2: patches (bugfixes, security updates etc.)
+
+~ patch / minor version update allowed 
+(~1.2.3 will match all 1.2.x but not 1.3.x versions),
+^ major version update allowed 
+(^1.2.3 will use releases from 1.2.3 to < 2.0.0),
 
 # VS code shortcuts
 
@@ -127,4 +136,11 @@ according to which the syntax will be formatted
 - -> tsc filename.ts -w (--watch) / npx tsc filename.ts -w (to watch changes, to keep compiling to js file),
 - -> tsc -w (to watch all \*.ts files),
 
-# GIT
+# describing methods
+
+/**
+  * This method fills out the inline form with user details
+  * @param name - should be first and last name
+  * @param email - valid email
+  * @param rememberMe - true or false (user session)
+  */

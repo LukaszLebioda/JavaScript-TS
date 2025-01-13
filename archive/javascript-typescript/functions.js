@@ -1,3 +1,9 @@
+/*
+function expression
+callback
+arguments object
+*/
+
 // -----------------------------------------------------
 // FUNCTION EXPRESSION
 // anonymous function assigned to a variable
@@ -49,3 +55,18 @@ greaterThanSix(myArr2, print);
 greaterThanSix(myArr2, function (data) {
 	console.log("data from anonymous callback: ", data);
 });
+
+// -----------------------------------------------------
+// ARGUMENTS OBJECT
+// special object, that allows for possibility
+// to pass any number of arguments to the function
+function sumAll() {
+	let result = 0;
+	for (let i = 0; i < arguments.length; i++) {
+		result += arguments[i];
+	}
+	return result;
+}
+
+const sum = sumAll(1, 2, 3, 4, 5);
+console.log("arguments object: ", sum);
